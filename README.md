@@ -1,1 +1,1 @@
-# study
+# personal study
