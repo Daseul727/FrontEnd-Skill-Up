@@ -1,7 +1,2 @@
-# #1. normal BBS project
-made of Java and Spring Framework.
-Used skills : java, javascript, jquery, ajax, mybatis..
-
-# #2. Groupware
-made of Java and Spring Framework.
-Used skills : java, javascript, jquery, ajax, mybatis..
+# #1. Basic React Project
+next.js 를 활용한 기본 React 프로젝트
