@@ -1,6 +1,6 @@
-import RootLayout from "@/components/layout/RootLayout";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import {Noto_Sans_KR} from "next/font/google";
 
 type LayoutProps = {
   children: React.ReactNode
@@ -9,14 +9,20 @@ type LayoutProps = {
   className?: string
 }
 
+const notoSansKr = Noto_Sans_KR({
+    subsets: ['latin'],
+    weight: ['100', '400', '700', '900'],
+    variable: '--font-notoSansKr',
+})
+
 export default function Layout({ children, hideHeader = false, hideFooter = false, className }: LayoutProps) {
   return (
-    <RootLayout>
+    <div className={`${notoSansKr.className}`}>
       {hideHeader || <Header />}
       <div>
-          <div>{children}</div>
+          {children}
       </div>
       {hideFooter || <Footer />}
-    </RootLayout>
+    </div>
   )
 }
