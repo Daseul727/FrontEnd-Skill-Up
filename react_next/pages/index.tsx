@@ -1,10 +1,18 @@
 import { Inter } from 'next/font/google'
 import {NextPageWithLayout} from "@/pages/_app";
 import Layout from "@/components/layout/Layout";
+import {useEffect} from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home : NextPageWithLayout = () => {
+
+    useEffect(() => {
+        console.log("hello")
+    },[])
+
+
+
   return (
     <>
       <h1>본문 영역입니다</h1>
