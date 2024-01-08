@@ -2,8 +2,9 @@ import {NextPageWithLayout} from "@/pages/_app";
 import Layout from "@/components/layout/Layout";
 import {useEffect, useState} from "react";
 import {myPageApi} from "@/api/myPage/myPageApi";
+import exp from "constants";
 
-interface itemListProps {
+export interface itemListProps {
     id: string
     title: string
 }
