@@ -14,12 +14,7 @@ export default function Document() {
 
   return (
     <Html lang="en">
-        <Head>
-            <title>사이트명 : 타이틀입니다</title>
-            <meta name='viewport' content='initial-scale=1, maximum-scale=1, width=device-width' />
-            <meta property='og:type' content='website' />
-            <meta name='description' content='사이트 설명입니다' />
-        </Head>
+        <Head/>
       <body>
         <Main />
         <NextScript />
