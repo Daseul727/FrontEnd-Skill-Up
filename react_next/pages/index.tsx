@@ -1,9 +1,6 @@
-import { Inter } from 'next/font/google'
 import {NextPageWithLayout} from "@/pages/_app";
 import Layout from "@/components/layout/Layout";
 import {useEffect} from "react";
-
-const inter = Inter({ subsets: ['latin'] })
 
 const Home : NextPageWithLayout = () => {
 
